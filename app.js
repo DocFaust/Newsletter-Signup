@@ -1,5 +1,5 @@
 //jshint esversion: 6
-
+const dotenv = require('dotenv').config()
 const express = require("express");
 const bodyParser = require("body-parser");
 const https = require("https");
@@ -30,12 +30,13 @@ app.post("/", (req, res) => {
   };
   var jsonData = JSON.stringify(data);
   console.log(jsonData);
-
+ const key = process.env.mailchimpauth;
+ console.log(key);
   // Parameter für den Request
   const url = "https://us17.api.mailchimp.com/3.0/lists/49fefb47b9/members";
   const options = {
     method: "POST",
-    auth: process.en.mailchimpauth,
+    auth: key,
 
   };
 
