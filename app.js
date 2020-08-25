@@ -62,8 +62,3 @@ app.post("/", (req, res) => {
 app.listen(port, () => {
   console.log("Listening to port " + port);
 });
-// {"email_address":"","email_type":"","status":"subscribed","merge_fields":{},"interests":{},"language":"","vip":false,"location":{"latitude":0,"longitude":0},"marketing_permissions":[],"ip_signup":"","timestamp_signup":"","ip_opt":"","timestamp_opt":"","tags":[]}
-// API Key
-// 99640d8f646c7f3c42221fc5ea0298cb-us17
-// List ID
-// 49fefb47b9
